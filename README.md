@@ -12,7 +12,7 @@ Plain HTML and CSS, no build step; hosted with GitHub Pages on the custom domain
 
 ## Before launch
 
-- [ ] Set up the **support@famcents.app** mailbox (or forwarding) — it's used on every page.
+- Support email on every page: **smartin.devsupport@gmail.com**.
 - [ ] **Terms**: fill in the developer name and address and the effective date; have the terms reviewed.
 - [ ] **Privacy policy**: keep the text in sync with the app (`src/lib/legal.ts` and `docs/privacy-policy.md` in
       the FamCents repository) and update the effective date.
