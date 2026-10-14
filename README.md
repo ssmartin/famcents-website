@@ -12,7 +12,7 @@ Plain HTML and CSS, no build step; deployed with Cloudflare Workers on famcents.
 
 ## Before launch
 
-- Support email on every page: **smartin.devsupport@gmail.com**.
+- Support email on every page: **smartin.appsupport@gmail.com**.
 - [ ] **Terms**: fill in the developer name and address and the effective date; have the terms reviewed.
 - [ ] **Privacy policy**: keep the text in sync with the app (`src/lib/legal.ts` and `docs/privacy-policy.md` in
       the FamCents repository) and update the effective date.
