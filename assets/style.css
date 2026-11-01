@@ -63,6 +63,9 @@ nav.site a:hover, nav.site a[aria-current="page"] { color: var(--text); }
 .hero h1 span { color: var(--brand); }
 .hero p.lead { font-size: clamp(18px, 2.4vw, 21px); color: var(--muted); max-width: 640px; margin: 0 auto 28px; }
 .hero p.lead-note { font-size: 16px; font-weight: 600; color: var(--brand); max-width: 640px; margin: -14px auto 28px; }
+.hero p.langs { font-size: 14px; color: var(--muted); margin: -16px auto 24px; }
+.hero p.langs a { color: var(--muted); }
+.hero p.langs strong { color: var(--text); }
 .pills { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 32px; }
 .pill { background: var(--brand-soft); color: var(--brand); font-weight: 700; font-size: 14px; padding: 6px 14px; border-radius: 999px; }
 
@@ -131,6 +134,9 @@ section p.sub { color: var(--muted); margin: 0 0 28px; max-width: 680px; }
 .page .langs { color: var(--muted); font-size: 14px; margin: -22px 0 28px; }
 .page .langs a { color: var(--muted); }
 .page .langs strong { color: var(--text); }
+/* Translated legal pages: which version is binding */
+.page .note { color: var(--muted); font-size: 14px; margin: -22px 0 28px; }
+.page .note + .langs { margin-top: 0; }
 .page h2 { font-size: 22px; margin: 32px 0 8px; }
 .page p, .page li { color: var(--text); }
 details { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px 18px; margin: 10px 0; }
