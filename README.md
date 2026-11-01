@@ -8,6 +8,7 @@ Plain HTML and CSS, no build step; deployed with Cloudflare Workers on famcents.
 | Homepage | https://famcents.app/ | `index.html` |
 | Privacy policy | https://famcents.app/privacy | `privacy/index.html` |
 | Support | https://famcents.app/support | `support/index.html` |
+| Support in German, Romanian, Spanish | https://famcents.app/de/support (ro, es) | `de/support/index.html` (`ro/`, `es/`) — the app opens the one in its language; keep them in step with the English page and use the app's own labels (`src/locales/<language>` in the app repository) |
 | Terms | https://famcents.app/terms | `terms/index.html` |
 
 ## Before launch

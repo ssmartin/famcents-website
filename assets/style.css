@@ -127,6 +127,10 @@ section p.sub { color: var(--muted); margin: 0 0 28px; max-width: 680px; }
 .page article { max-width: 760px; }
 .page h1 { font-size: clamp(30px, 4.5vw, 42px); margin: 0 0 6px; }
 .page .meta { color: var(--muted); margin: 0 0 32px; }
+/* Language switcher under the title (support page in English, German, Romanian, Spanish) */
+.page .langs { color: var(--muted); font-size: 14px; margin: -22px 0 28px; }
+.page .langs a { color: var(--muted); }
+.page .langs strong { color: var(--text); }
 .page h2 { font-size: 22px; margin: 32px 0 8px; }
 .page p, .page li { color: var(--text); }
 details { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px 18px; margin: 10px 0; }
