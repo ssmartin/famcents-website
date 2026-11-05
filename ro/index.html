@@ -119,31 +119,36 @@
       <div class="wrap">
         <h2>O privire în aplicație</h2>
         <p class="sub">Gândită până în cele mai mici detalii: ecrane clare, bine organizate, pentru fiecare zi.</p>
-        <div class="shots">
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/1-overview.jpg" alt="Pe scurt în FamCents: soldul lunii, cardul de sincronizare cu partenerul și cheltuielile pe categorii" loading="lazy" width="430" height="932"></div>
-            <figcaption>Simplu, comun, privat</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/2-together.jpg" alt="Căutare după supermarket: rezultate de pe ambele telefoane, cu etichete care arată ce a adăugat partenerul" loading="lazy" width="430" height="932"></div>
-            <figcaption>Găsit în câteva secunde</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/3-add.jpg" alt="Adăugarea unei cheltuieli vocal: „45.50 groceries supermarket”" loading="lazy" width="430" height="932"></div>
-            <figcaption>Scrie. Spune. Gata.</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/4-who-spent.jpg" alt="Statistici: cheltuieli pe categorii, pe persoane și în ultimele 6 luni" loading="lazy" width="430" height="932"></div>
-            <figcaption>Statistici clare</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/5-budgets.jpg" alt="Bugete lunare pe categorii, cu bare de progres" loading="lazy" width="430" height="932"></div>
-            <figcaption>În limita bugetului</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/6-private.jpg" alt="Pe scurt în modul întunecat" loading="lazy" width="430" height="932"></div>
-            <figcaption>Privat, și în modul întunecat</figcaption>
-          </figure>
+        <div class="gallery" data-page-label="Capturi {n}">
+          <button type="button" class="gallery-btn gallery-prev" aria-label="Capturile anterioare">‹</button>
+          <div class="shots" tabindex="0">
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/1-overview.jpg" alt="Pe scurt în FamCents: soldul lunii, cardul de sincronizare cu partenerul și cheltuielile pe categorii" loading="lazy" width="430" height="932"></div>
+              <figcaption>Simplu, comun, privat</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/2-together.jpg" alt="Căutare după supermarket: rezultate de pe ambele telefoane, cu etichete care arată ce a adăugat partenerul" loading="lazy" width="430" height="932"></div>
+              <figcaption>Găsit în câteva secunde</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/3-add.jpg" alt="Adăugarea unei cheltuieli vocal: „45.50 groceries supermarket”" loading="lazy" width="430" height="932"></div>
+              <figcaption>Scrie. Spune. Gata.</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/4-who-spent.jpg" alt="Statistici: cheltuieli pe categorii, pe persoane și în ultimele 6 luni" loading="lazy" width="430" height="932"></div>
+              <figcaption>Statistici clare</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/5-budgets.jpg" alt="Bugete lunare pe categorii, cu bare de progres" loading="lazy" width="430" height="932"></div>
+              <figcaption>În limita bugetului</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/6-private.jpg" alt="Pe scurt în modul întunecat" loading="lazy" width="430" height="932"></div>
+              <figcaption>Privat, și în modul întunecat</figcaption>
+            </figure>
+          </div>
+          <button type="button" class="gallery-btn gallery-next" aria-label="Capturile următoare">›</button>
+          <div class="gallery-dots"></div>
         </div>
       </div>
     </section>
@@ -210,5 +215,6 @@
       <div><a href="/ro/privacy/">Confidențialitate</a><a href="/terms/">Termeni</a><a href="/ro/support/">Ajutor</a><a href="/changes/">Noutăți</a></div>
     </div>
   </footer>
+  <script src="/assets/gallery.js" defer></script>
 </body>
 </html>

@@ -119,31 +119,36 @@
       <div class="wrap">
         <h2>A look inside</h2>
         <p class="sub">Thoughtfully designed down to the small details: clear, well-organized screens for everyday use.</p>
-        <div class="shots">
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/1-overview.jpg" alt="FamCents overview: monthly balance, partner sync card and expenses by category" loading="lazy" width="430" height="932"></div>
-            <figcaption>Simple, shared, private</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/2-together.jpg" alt="Search for supermarket: results from both phones, with labels showing what your partner added" loading="lazy" width="430" height="932"></div>
-            <figcaption>Found in seconds</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/3-add.jpg" alt="Adding an expense by voice: “45.50 groceries supermarket”" loading="lazy" width="430" height="932"></div>
-            <figcaption>Type it. Say it. Done.</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/4-who-spent.jpg" alt="Statistics: spending per category, per person and over the last 6 months" loading="lazy" width="430" height="932"></div>
-            <figcaption>Clear stats</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/5-budgets.jpg" alt="Monthly budgets per category with progress bars" loading="lazy" width="430" height="932"></div>
-            <figcaption>Stay on budget</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/6-private.jpg" alt="Overview in dark mode" loading="lazy" width="430" height="932"></div>
-            <figcaption>Private, also in dark mode</figcaption>
-          </figure>
+        <div class="gallery" data-page-label="Screenshots {n}">
+          <button type="button" class="gallery-btn gallery-prev" aria-label="Previous screenshots">‹</button>
+          <div class="shots" tabindex="0">
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/1-overview.jpg" alt="FamCents overview: monthly balance, partner sync card and expenses by category" loading="lazy" width="430" height="932"></div>
+              <figcaption>Simple, shared, private</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/2-together.jpg" alt="Search for supermarket: results from both phones, with labels showing what your partner added" loading="lazy" width="430" height="932"></div>
+              <figcaption>Found in seconds</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/3-add.jpg" alt="Adding an expense by voice: “45.50 groceries supermarket”" loading="lazy" width="430" height="932"></div>
+              <figcaption>Type it. Say it. Done.</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/4-who-spent.jpg" alt="Statistics: spending per category, per person and over the last 6 months" loading="lazy" width="430" height="932"></div>
+              <figcaption>Clear stats</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/5-budgets.jpg" alt="Monthly budgets per category with progress bars" loading="lazy" width="430" height="932"></div>
+              <figcaption>Stay on budget</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/6-private.jpg" alt="Overview in dark mode" loading="lazy" width="430" height="932"></div>
+              <figcaption>Private, also in dark mode</figcaption>
+            </figure>
+          </div>
+          <button type="button" class="gallery-btn gallery-next" aria-label="Next screenshots">›</button>
+          <div class="gallery-dots"></div>
         </div>
       </div>
     </section>
@@ -210,5 +215,6 @@
       <div><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/support/">Support</a><a href="/changes/">What’s new</a></div>
     </div>
   </footer>
+  <script src="/assets/gallery.js" defer></script>
 </body>
 </html>

@@ -121,31 +121,36 @@
       <div class="wrap">
         <h2>Ein Blick hinein</h2>
         <p class="sub">Durchdacht bis ins kleinste Detail: übersichtlich aufgebaute Bildschirme für jeden Tag.</p>
-        <div class="shots">
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/1-overview.jpg" alt="FamCents-Übersicht: Monatssaldo, Karte für den Partner-Abgleich und Ausgaben nach Kategorie" loading="lazy" width="430" height="932"></div>
-            <figcaption>Einfach, gemeinsam, privat</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/2-together.jpg" alt="Suche nach „supermarket“: Ergebnisse von beiden Handys, mit Hinweisen, was dein Partner eingetragen hat" loading="lazy" width="430" height="932"></div>
-            <figcaption>In Sekunden gefunden</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/3-add.jpg" alt="Ausgabe per Sprache erfassen: „45.50 groceries supermarket“" loading="lazy" width="430" height="932"></div>
-            <figcaption>Eintippen. Sagen. Fertig.</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/4-who-spent.jpg" alt="Statistik: Ausgaben pro Kategorie, pro Person und über die letzten 6 Monate" loading="lazy" width="430" height="932"></div>
-            <figcaption>Klare Statistik</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/5-budgets.jpg" alt="Monatliche Budgets pro Kategorie mit Fortschrittsbalken" loading="lazy" width="430" height="932"></div>
-            <figcaption>Im Budget bleiben</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/6-private.jpg" alt="Übersicht im dunklen Modus" loading="lazy" width="430" height="932"></div>
-            <figcaption>Privat, auch im dunklen Modus</figcaption>
-          </figure>
+        <div class="gallery" data-page-label="Bildschirmfotos {n}">
+          <button type="button" class="gallery-btn gallery-prev" aria-label="Vorherige Bildschirmfotos">‹</button>
+          <div class="shots" tabindex="0">
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/1-overview.jpg" alt="FamCents-Übersicht: Monatssaldo, Karte für den Partner-Abgleich und Ausgaben nach Kategorie" loading="lazy" width="430" height="932"></div>
+              <figcaption>Einfach, gemeinsam, privat</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/2-together.jpg" alt="Suche nach „supermarket“: Ergebnisse von beiden Handys, mit Hinweisen, was dein Partner eingetragen hat" loading="lazy" width="430" height="932"></div>
+              <figcaption>In Sekunden gefunden</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/3-add.jpg" alt="Ausgabe per Sprache erfassen: „45.50 groceries supermarket“" loading="lazy" width="430" height="932"></div>
+              <figcaption>Eintippen. Sagen. Fertig.</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/4-who-spent.jpg" alt="Statistik: Ausgaben pro Kategorie, pro Person und über die letzten 6 Monate" loading="lazy" width="430" height="932"></div>
+              <figcaption>Klare Statistik</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/5-budgets.jpg" alt="Monatliche Budgets pro Kategorie mit Fortschrittsbalken" loading="lazy" width="430" height="932"></div>
+              <figcaption>Im Budget bleiben</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/6-private.jpg" alt="Übersicht im dunklen Modus" loading="lazy" width="430" height="932"></div>
+              <figcaption>Privat, auch im dunklen Modus</figcaption>
+            </figure>
+          </div>
+          <button type="button" class="gallery-btn gallery-next" aria-label="Nächste Bildschirmfotos">›</button>
+          <div class="gallery-dots"></div>
         </div>
       </div>
     </section>
@@ -212,5 +217,6 @@
       <div><a href="/de/privacy/">Datenschutz</a><a href="/terms/">Nutzungsbedingungen</a><a href="/de/support/">Hilfe</a><a href="/changes/">Neuigkeiten</a></div>
     </div>
   </footer>
+  <script src="/assets/gallery.js" defer></script>
 </body>
 </html>

@@ -119,31 +119,36 @@
       <div class="wrap">
         <h2>Un vistazo por dentro</h2>
         <p class="sub">Diseñada con cuidado hasta el último detalle: pantallas claras y bien organizadas para el día a día.</p>
-        <div class="shots">
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/1-overview.jpg" alt="Inicio de FamCents: saldo del mes, tarjeta de sincronización con tu pareja y gastos por categoría" loading="lazy" width="430" height="932"></div>
-            <figcaption>Simple. Compartida. Privada.</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/2-together.jpg" alt="Búsqueda de “supermarket”: resultados de los dos teléfonos, con etiquetas que muestran lo que añadió tu pareja" loading="lazy" width="430" height="932"></div>
-            <figcaption>Lo encuentras en segundos</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/3-add.jpg" alt="Añadir un gasto por voz: “45.50 groceries supermarket”" loading="lazy" width="430" height="932"></div>
-            <figcaption>Escríbelo. Dilo. Listo.</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/4-who-spent.jpg" alt="Estadísticas: gastos por categoría, por persona y de los últimos 6 meses" loading="lazy" width="430" height="932"></div>
-            <figcaption>Estadísticas claras</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/5-budgets.jpg" alt="Presupuestos mensuales por categoría con barras de progreso" loading="lazy" width="430" height="932"></div>
-            <figcaption>Dentro del presupuesto</figcaption>
-          </figure>
-          <figure class="shot-item">
-            <div class="shot"><img src="/assets/screenshots/6-private.jpg" alt="Inicio en modo oscuro" loading="lazy" width="430" height="932"></div>
-            <figcaption>Privada, también en modo oscuro</figcaption>
-          </figure>
+        <div class="gallery" data-page-label="Capturas {n}">
+          <button type="button" class="gallery-btn gallery-prev" aria-label="Capturas anteriores">‹</button>
+          <div class="shots" tabindex="0">
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/1-overview.jpg" alt="Inicio de FamCents: saldo del mes, tarjeta de sincronización con tu pareja y gastos por categoría" loading="lazy" width="430" height="932"></div>
+              <figcaption>Simple. Compartida. Privada.</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/2-together.jpg" alt="Búsqueda de “supermarket”: resultados de los dos teléfonos, con etiquetas que muestran lo que añadió tu pareja" loading="lazy" width="430" height="932"></div>
+              <figcaption>Lo encuentras en segundos</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/3-add.jpg" alt="Añadir un gasto por voz: “45.50 groceries supermarket”" loading="lazy" width="430" height="932"></div>
+              <figcaption>Escríbelo. Dilo. Listo.</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/4-who-spent.jpg" alt="Estadísticas: gastos por categoría, por persona y de los últimos 6 meses" loading="lazy" width="430" height="932"></div>
+              <figcaption>Estadísticas claras</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/5-budgets.jpg" alt="Presupuestos mensuales por categoría con barras de progreso" loading="lazy" width="430" height="932"></div>
+              <figcaption>Dentro del presupuesto</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/6-private.jpg" alt="Inicio en modo oscuro" loading="lazy" width="430" height="932"></div>
+              <figcaption>Privada, también en modo oscuro</figcaption>
+            </figure>
+          </div>
+          <button type="button" class="gallery-btn gallery-next" aria-label="Capturas siguientes">›</button>
+          <div class="gallery-dots"></div>
         </div>
       </div>
     </section>
@@ -210,5 +215,6 @@
       <div><a href="/es/privacy/">Privacidad</a><a href="/terms/">Términos</a><a href="/es/support/">Ayuda</a><a href="/changes/">Novedades</a></div>
     </div>
   </footer>
+  <script src="/assets/gallery.js" defer></script>
 </body>
 </html>
