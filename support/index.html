@@ -57,15 +57,13 @@
         <h2>Sharing with your partner</h2>
         <details>
           <summary>Can I use FamCents on my own?</summary>
-          <p>Yes. Everything works on one phone, and syncing is optional: set it up whenever you like, or turn it off
-            in Settings → Sharing → “Partner sync”.</p>
+          <p>Yes. Everything works on one phone, and syncing is optional: set it up whenever you like, or turn it off in Settings → Partner sync.</p>
         </details>
         <details>
           <summary>How do I set up sync with my partner?</summary>
           <p>You only do this once. Both of you need FamCents installed.</p>
           <ol>
-            <li>On one phone, tap “Set up” on the Overview’s “Share with your partner” card (or Settings → Sharing) and
-              enter your name. Your partner sees it next to the entries you add.</li>
+            <li>On one phone, tap “Set up” on the Overview’s “Share with your partner” card (or Settings → Partner sync → “Set up partner sync”) and enter your name. Your partner sees it next to the entries you add.</li>
             <li>Tap “Send to partner”. On iPhone, choose your partner’s iPhone in AirDrop. On Android, send it with
               Quick Share, WhatsApp, Mail or any other app.</li>
             <li>Your partner opens the file and FamCents syncs by itself. On Android with Quick Share, tap
@@ -80,7 +78,7 @@
           <summary>How do we sync after that?</summary>
           <p>Tap “Sync” on the Overview whenever you like, for example once a day or at the end of the week. The line
             above it shows when you last synced (“Synced with Ana · Today, 18:30”).</p>
-          <p>With Quick sync (on by default, Settings → Sharing) and FamCents open on both phones, one tap updates both,
+          <p>With Quick sync (on by default, Settings → Partner sync) and FamCents open on both phones, one tap updates both,
             with nothing to send or accept:</p>
           <ul>
             <li><strong>On the same Wi-Fi:</strong> any two phones, iPhone or Android – also an iPhone with an Android
@@ -97,6 +95,21 @@
             use.</p>
         </details>
         <details>
+          <summary>Quick sync doesn’t find my partner’s phone</summary>
+          <p>Sync then sends a file instead, so nothing is lost. For Quick sync to find the other phone, check:</p>
+          <ul>
+            <li><strong>FamCents is open on both phones</strong>, on the screen, not just running in the background.</li>
+            <li><strong>Quick sync is on</strong> on both: Settings → Partner sync → “Quick sync”.</li>
+            <li><strong>Both phones are on the same Wi-Fi.</strong> Guest networks and some office or public Wi-Fi keep
+              devices apart; then send a file instead.</li>
+            <li><strong>iPhone: local network access is allowed.</strong> FamCents asks the first time; if you said no,
+              turn on FamCents in the iPhone’s Settings → Privacy &amp; Security → Local Network.</li>
+            <li><strong>Two iPhones without Wi-Fi:</strong> keep them close, with Wi-Fi and Bluetooth turned on in
+              Control Center.</li>
+            <li><strong>The phones are paired.</strong> The very first sync is always done with a file.</li>
+          </ul>
+        </details>
+        <details>
           <summary>What is shared, and what stays on each phone?</summary>
           <p>Shared: transactions, categories, budgets, accounts and recurring transactions. Each phone keeps its own
             currency, reminders, app lock, appearance and Pro.</p>
@@ -104,14 +117,22 @@
             “Who spent what” in Statistics, and an “Added by” filter in Search.</p>
         </details>
         <details>
+          <summary>Can we use different currencies?</summary>
+          <p>It’s best to use the same one on both phones. FamCents doesn’t convert amounts: an entry is saved as a
+            number, and each phone shows it in its own currency (Settings → General → Currency). So 50 entered on a phone
+            set to EUR shows as RON 50.00 on a phone set to RON. After a sync with a file, FamCents tells you when your
+            currencies differ.</p>
+          <p>Changing the currency doesn’t convert existing amounts either, so choose it once, when you start.</p>
+        </details>
+        <details>
           <summary>What happens if we both changed the same expense?</summary>
           <p>FamCents merges both phones: new entries from either side are added, deletions carry over, and if the same
             entry was changed on both phones, the most recent change is kept. If something looks wrong after a sync,
-            open Settings → Sharing → your partner’s name and tap “Undo last sync”.</p>
+            open Settings → Partner sync → “Partner sync with …” and tap “Undo last sync”.</p>
         </details>
         <details>
           <summary>Can we undo a sync?</summary>
-          <p>Yes. Open Settings → Sharing → your partner’s name and tap “Undo last sync”. Your data goes back to how it
+          <p>Yes. Open Settings → Partner sync → “Partner sync with …” and tap “Undo last sync”. Your data goes back to how it
             was right before that sync; anything you added or changed since then is undone too.</p>
           <ul>
             <li><strong>Up to 5 syncs in a row:</strong> before every sync (by file, on the same Wi-Fi or nearby, even
@@ -131,7 +152,7 @@
               instead of “Open”.</li>
             <li><strong>Android asks which app to use</strong>: choose FamCents → “Just once”.</li>
             <li><strong>Nothing happens, or the app can’t read it</strong> (some email apps): save the file to your
-              phone, then in FamCents go to Settings → Sharing → “Open a received file” and pick it.</li>
+              phone, then in FamCents go to Settings → Partner sync → “Set up partner sync” (or “Partner sync with …”) → “Open a received file” and pick it.</li>
             <li><strong>“This is your own file”</strong>: you opened the file you sent. Open the one your partner sent
               you.</li>
           </ul>
@@ -139,8 +160,7 @@
         <details>
           <summary>Sync shows “Partner” instead of my partner’s name</summary>
           <p>Entries are labelled by the phone that added them. “Partner” means a phone FamCents doesn’t know by name,
-            for example after your partner reinstalled FamCents or used another phone. Ask your partner to set their
-            name (Settings → Sharing) and sync again; entries added from then on carry their name.</p>
+            for example after your partner reinstalled FamCents or used another phone. Ask your partner to set their name (Settings → Partner sync → “Partner sync with …”) and sync again; entries added from then on carry their name.</p>
         </details>
         <details>
           <summary>Do we both need Pro?</summary>
@@ -169,16 +189,36 @@
             reportaproblem.apple.com, on Android through Google Play’s order history.</p>
         </details>
 
+        <h2>Budgets and recurring transactions</h2>
+        <details>
+          <summary>How do budgets and budget alerts work?</summary>
+          <p>Open the Budgets tab and tap a category to set its monthly budget. The bar shows how much of it is spent,
+            counting the expenses from both phones if you sync with your partner. The free version has up to 3 budgets;
+            Pro has unlimited budgets.</p>
+          <p>Budget alerts are on by default: when an expense brings a category to your alert level, you get a
+            heads-up, and when it goes over its budget, a red alert. Turn them off or choose the level (50–90%) in
+            Settings → Reminders &amp; alerts → “Budget alerts”. Budgets are shared with your partner; the alert
+            settings are per phone.</p>
+        </details>
+        <details>
+          <summary>How do recurring transactions work?</summary>
+          <p>For rent, subscriptions or a salary (Pro): when you add the transaction, choose Repeat → Weekly, Monthly or
+            Yearly. FamCents adds each one on its day when you open the app; if you haven’t opened it for a while, the
+            missed ones are added at once, with the right dates.</p>
+          <p>Settings → Recurring transactions lists them: tap one to change it, pause it or delete it. With partner
+            sync, both phones know the same recurring transactions, and each one is added only once.</p>
+        </details>
+
         <h2>Reminders</h2>
         <details>
           <summary>How do I set up the reminder?</summary>
-          <p>Settings → Reminders: turn on Reminder, choose every day or once a week, and pick a time – one of the usual
+          <p>Settings → Reminders &amp; alerts: turn on Reminder, choose every day or once a week, and pick a time – one of the usual
             ones, or “Other…” for any time you like. Tapping the reminder opens a new expense.</p>
         </details>
         <details>
           <summary>The reminder doesn’t come, or comes late (Android)</summary>
           <p>Many Android phones hold back reminders to save battery. FamCents asks about this when you turn the reminder
-            on, and Settings → Reminders shows a tip with a link to FamCents’ app settings while it’s needed. In your
+            on, and Settings → Reminders &amp; alerts shows a tip with a link to FamCents’ app settings while it’s needed. In your
             phone’s Settings → Apps → FamCents:</p>
           <ul>
             <li><strong>App battery usage</strong>: choose “Unrestricted” (on some phones “No restrictions”). On some
