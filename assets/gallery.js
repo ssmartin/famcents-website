@@ -13,17 +13,24 @@
     function step() {
       return items.length > 1 ? items[1].offsetLeft - items[0].offsetLeft : row.clientWidth;
     }
-    function perView() {
-      return Math.max(1, Math.floor((row.clientWidth + 1) / step()));
+    /** How far the row can scroll; the last position shows the last screenshot in full. */
+    function maxScroll() {
+      return Math.max(0, row.scrollWidth - row.clientWidth);
     }
+    /**
+     * Positions: one per screenshot step, the last one being the end of the row. A remainder of less than half a step
+     * (a screenshot already almost fully visible) belongs to the last position instead of getting a dot of its own.
+     */
     function pages() {
-      return Math.max(1, items.length - perView() + 1);
+      return Math.round(maxScroll() / step()) + 1;
     }
     function current() {
+      if (row.scrollLeft >= maxScroll() - 8) return pages() - 1;
       return Math.min(pages() - 1, Math.round(row.scrollLeft / step()));
     }
     function go(page) {
-      row.scrollTo({ left: page * step(), behavior: 'smooth' });
+      var left = page >= pages() - 1 ? maxScroll() : Math.min(page * step(), maxScroll());
+      row.scrollTo({ left: left, behavior: 'smooth' });
     }
 
     function buildDots() {
@@ -41,9 +48,8 @@
     }
     function update() {
       var page = current();
-      var max = row.scrollWidth - row.clientWidth - 8;
       prev.disabled = row.scrollLeft <= 8;
-      next.disabled = row.scrollLeft >= max;
+      next.disabled = row.scrollLeft >= maxScroll() - 8;
       dots.querySelectorAll('.gallery-dot').forEach(function (dot, i) {
         dot.setAttribute('aria-current', i === page ? 'true' : 'false');
       });
