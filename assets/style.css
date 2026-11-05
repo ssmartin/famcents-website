@@ -180,3 +180,15 @@ footer.site a { color: var(--muted); margin-right: 16px; }
   header.site .wrap { height: auto; padding-top: 12px; padding-bottom: 12px; flex-direction: column; align-items: flex-start; gap: 6px; }
   .hero { padding-top: 40px; }
 }
+
+/* Questions? Link to the support page (end of the home page) */
+#help { padding-top: 8px; }
+.help-card { text-align: center; padding: 32px 24px; }
+.help-card h2 { margin-top: 0; }
+.help-card p.sub { margin-left: auto; margin-right: auto; }
+.button {
+  display: inline-block; margin-top: 8px; padding: 12px 22px; border-radius: 999px; background: var(--brand);
+  color: #fff; font-weight: 700; text-decoration: none;
+}
+.button:hover { filter: brightness(1.08); }
+.button:focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; }
