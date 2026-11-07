@@ -1,6 +1,6 @@
 # famcents.app
 
-The website for FamCents, the private family expense tracker: homepage, privacy policy, support and terms.
+The website for FamCents, the private expense tracker for couples: homepage, privacy policy, support and terms.
 Plain HTML and CSS, no build step; deployed with Cloudflare Workers on famcents.app.
 
 | Page | URL | File |
