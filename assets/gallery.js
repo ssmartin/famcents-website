@@ -62,3 +62,69 @@
     buildDots();
   });
 })();
+
+// Store images in the gallery: tap or click one to see it full size (a <dialog>), with arrows, swiping and the arrow
+// keys for the others; Esc, ✕ or a tap outside the image closes it. Without JavaScript the images stay as they are.
+(function () {
+  if (typeof HTMLDialogElement === 'undefined') return;
+  document.querySelectorAll('.gallery').forEach(function (gallery) {
+    var imgs = [].slice.call(gallery.querySelectorAll('.store-shot img'));
+    if (!imgs.length) return;
+    var prevLabel = gallery.querySelector('.gallery-prev').getAttribute('aria-label');
+    var nextLabel = gallery.querySelector('.gallery-next').getAttribute('aria-label');
+    var closeLabel = gallery.getAttribute('data-close-label') || 'Close';
+    var dlg = document.createElement('dialog');
+    dlg.className = 'lightbox';
+    dlg.innerHTML =
+      '<button type="button" class="lb-btn lb-close">✕</button>' +
+      '<button type="button" class="lb-btn lb-prev">‹</button>' +
+      '<img alt="">' +
+      '<button type="button" class="lb-btn lb-next">›</button>';
+    dlg.querySelector('.lb-close').setAttribute('aria-label', closeLabel);
+    dlg.querySelector('.lb-prev').setAttribute('aria-label', prevLabel);
+    dlg.querySelector('.lb-next').setAttribute('aria-label', nextLabel);
+    document.body.appendChild(dlg);
+    var big = dlg.querySelector('img');
+    var index = 0;
+    var opener = null;
+
+    function show(n) {
+      index = (n + imgs.length) % imgs.length;
+      big.src = imgs[index].getAttribute('src');
+      big.alt = imgs[index].alt;
+    }
+    function open(n, from) {
+      opener = from;
+      show(n);
+      dlg.showModal();
+    }
+    imgs.forEach(function (img, n) {
+      img.tabIndex = 0;
+      img.setAttribute('role', 'button');
+      img.addEventListener('click', function () { open(n, img); });
+      img.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          open(n, img);
+        }
+      });
+    });
+    dlg.querySelector('.lb-close').addEventListener('click', function () { dlg.close(); });
+    dlg.querySelector('.lb-prev').addEventListener('click', function () { show(index - 1); });
+    dlg.querySelector('.lb-next').addEventListener('click', function () { show(index + 1); });
+    dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+    dlg.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') show(index - 1);
+      if (e.key === 'ArrowRight') show(index + 1);
+    });
+    dlg.addEventListener('close', function () { if (opener) opener.focus(); });
+    var startX = null;
+    dlg.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+    dlg.addEventListener('touchend', function (e) {
+      if (startX == null) return;
+      var dx = e.changedTouches[0].clientX - startX;
+      startX = null;
+      if (Math.abs(dx) > 40) show(index + (dx < 0 ? 1 : -1));
+    });
+  });
+})();
