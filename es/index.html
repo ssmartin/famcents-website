@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OurCents – Gastos y presupuestos: privado, seguro y compartido</title>
+  <title>OurCents – Controla los gastos en pareja, con privacidad</title>
   <meta name="description" content="La app de gastos sencilla y diseñada con cuidado para parejas. Lleva las cuentas junto con tu pareja, sin registrarte y sin guardar tus finanzas en un servidor de OurCents. Gratis para siempre, sin anuncios, sin suscripción.">
   <meta name="theme-color" content="#0f766e">
   <meta property="og:title" content="OurCents – Gastos en pareja">
-  <meta property="og:description" content="Privado, seguro y compartido: gastos y presupuestos. Sin registro ni anuncios.">
+  <meta property="og:description" content="Gastos y presupuestos compartidos. Privado: sin registro, anuncios ni rastreo.">
   <meta property="og:url" content="https://getourcents.app/es/">
   <link rel="icon" href="/assets/favicon.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -28,6 +28,15 @@
         <a href="#pro">Pro</a>
         <a href="/es/support/">Ayuda</a>
       </nav>
+      <details class="lang-menu">
+        <summary aria-label="Idioma: Español"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>ES</span></summary>
+        <ul>
+            <li><a href="/" hreflang="en" lang="en">English</a></li>
+            <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+            <li><a href="/ro/" hreflang="ro" lang="ro">Română</a></li>
+            <li><a href="/es/" hreflang="es" lang="es" aria-current="true">Español</a></li>
+        </ul>
+      </details>
     </div>
   </header>
 
@@ -35,13 +44,12 @@
     <section class="hero">
       <div class="wrap">
         <img src="/assets/icon-512.png" alt="Icono de la app OurCents" width="96" height="96" class="hero-icon">
-        <h1>Privado. Seguro. <span>Compartido.</span></h1>
+        <h1>Controla los gastos en pareja, <span>con privacidad.</span></h1>
         <p class="lead">
           La app de gastos sencilla y diseñada con cuidado para parejas. Añade gastos en segundos, escribiéndolos o dictándolos, y lleva las cuentas junto con tu pareja, sin registrarte y sin guardar tus finanzas en un servidor de
           OurCents.
         </p>
         <p class="lead-note">¿Llevas tus gastos tú solo? Funciona igual de bien sin pareja.</p>
-        <p class="langs"><a href="/" hreflang="en" lang="en">English</a> · <a href="/de/" hreflang="de" lang="de">Deutsch</a> · <a href="/ro/" hreflang="ro" lang="ro">Română</a> · <strong>Español</strong></p>
         <div class="pills">
           <span class="pill">Sin registro</span>
           <span class="pill">Sin anuncios</span>
@@ -77,8 +85,8 @@
               app de mensajería pasan por ese servicio, según su propia política de privacidad. Con la sincronización por Wi-Fi, los datos van directamente de un teléfono al otro.</p>
           </div>
           <figure class="shot-item hero-shot">
-            <div class="shot"><img src="/assets/screenshots/7-synced.jpg" alt="Resultado de la sincronización: sincronizado con Emma, 3 movimientos nuevos, ahora los dos tienen los mismos datos" width="430" height="932"></div>
-            <figcaption>Sincronizado con tu pareja</figcaption>
+            <div class="shot"><img src="/assets/screenshots/16-paired.jpg" alt="Sincronización con tu pareja: emparejado con Emma, Sincronizar con Emma, y tus datos van directamente de tu teléfono al de tu pareja, cifrados" width="430" height="932"></div>
+            <figcaption>Emparejado con tu pareja</figcaption>
           </figure>
         </div>
       </div>
@@ -121,24 +129,32 @@
           <button type="button" class="gallery-btn gallery-prev" aria-label="Capturas anteriores">‹</button>
           <div class="shots" tabindex="0">
             <figure class="shot-item">
-              <div class="shot"><img src="/assets/screenshots/1-overview.jpg" alt="Inicio de OurCents: saldo del mes, tarjeta de sincronización con tu pareja y gastos por categoría" loading="lazy" width="430" height="932"></div>
-              <figcaption>Simple. Compartida. Privada.</figcaption>
+              <div class="shot"><img src="/assets/screenshots/1-overview.jpg" alt="Inicio de OurCents: el saldo del mes, sincronizado con tu pareja, ingresos y gastos, gastos por categoría" loading="lazy" width="430" height="932"></div>
+              <figcaption>Controla los gastos en pareja</figcaption>
             </figure>
             <figure class="shot-item">
-              <div class="shot"><img src="/assets/screenshots/2-together.jpg" alt="Búsqueda de “supermarket”: resultados de los dos teléfonos, con etiquetas que muestran lo que añadió tu pareja" loading="lazy" width="430" height="932"></div>
-              <figcaption>Lo encuentras en segundos</figcaption>
+              <div class="shot"><img src="/assets/screenshots/14-overview-insight.jpg" alt="Aviso en Inicio: Supermercado va camino de unos 567 € a 30 de noviembre, 67 € por encima del presupuesto" loading="lazy" width="430" height="932"></div>
+              <figcaption>Detecta a tiempo si gastas de más</figcaption>
             </figure>
             <figure class="shot-item">
-              <div class="shot"><img src="/assets/screenshots/3-add.jpg" alt="Añadir un gasto por voz: “45.50 groceries supermarket”" loading="lazy" width="430" height="932"></div>
+              <div class="shot"><img src="/assets/screenshots/13-category.jpg" alt="Supermercado mes a mes: el total, los últimos 6 meses y la media" loading="lazy" width="430" height="932"></div>
+              <figcaption>Cada categoría, mes a mes</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/5-budgets.jpg" alt="Presupuestos mensuales por categoría con barras de progreso y la previsión de Supermercado" loading="lazy" width="430" height="932"></div>
+              <figcaption>Dentro del presupuesto</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/3-add.jpg" alt="Añadir un gasto por voz: “45,50 supermercado”" loading="lazy" width="430" height="932"></div>
               <figcaption>Escríbelo. Dilo. Listo.</figcaption>
             </figure>
             <figure class="shot-item">
-              <div class="shot"><img src="/assets/screenshots/4-who-spent.jpg" alt="Estadísticas: gastos por categoría, por persona y de los últimos 6 meses" loading="lazy" width="430" height="932"></div>
-              <figcaption>Estadísticas claras</figcaption>
+              <div class="shot"><img src="/assets/screenshots/4-who-spent.jpg" alt="Estadísticas: quién gastó qué, gastos por cuenta y los últimos 6 meses" loading="lazy" width="430" height="932"></div>
+              <figcaption>Quién gastó qué</figcaption>
             </figure>
             <figure class="shot-item">
-              <div class="shot"><img src="/assets/screenshots/5-budgets.jpg" alt="Presupuestos mensuales por categoría con barras de progreso" loading="lazy" width="430" height="932"></div>
-              <figcaption>Dentro del presupuesto</figcaption>
+              <div class="shot"><img src="/assets/screenshots/12-budgets-year-down.jpg" alt="Presupuestos de todo el año: los meses frente a los presupuestos mensuales y presupuestos anuales para vacaciones, regalos y seguros" loading="lazy" width="430" height="932"></div>
+              <figcaption>Presupuestos anuales (Pro)</figcaption>
             </figure>
             <figure class="shot-item">
               <div class="shot"><img src="/assets/screenshots/6-private.jpg" alt="Movimientos en modo oscuro" loading="lazy" width="430" height="932"></div>
@@ -223,5 +239,6 @@
     </div>
   </footer>
   <script src="/assets/gallery.js" defer></script>
+  <script src="/assets/menu.js" defer></script>
 </body>
 </html>

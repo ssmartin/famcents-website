@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OurCents – Privat, sicher, gemeinsam: Ausgaben &amp; Budgets</title>
+  <title>OurCents – Ausgaben gemeinsam erfassen, privat</title>
   <meta name="description" content="Die einfache, durchdachte Ausgaben-App für Paare. Behaltet eure Ausgaben gemeinsam im Blick, ohne Anmeldung und ohne deine Finanzen auf einem OurCents-Server zu speichern. Für immer kostenlos, ohne Werbung, ohne Abo.">
   <meta name="theme-color" content="#0f766e">
   <meta property="og:title" content="OurCents – Ausgaben-App für Paare">
-  <meta property="og:description" content="Privat, sicher, gemeinsam: Ausgaben &amp; Budgets. Ohne Anmeldung und Datenerhebung.">
+  <meta property="og:description" content="Gemeinsames Haushaltsbuch. Privat: ohne Anmeldung, Werbung oder Tracking.">
   <meta property="og:url" content="https://getourcents.app/de/">
   <link rel="icon" href="/assets/favicon.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -28,6 +28,15 @@
         <a href="#pro">Pro</a>
         <a href="/de/support/">Hilfe</a>
       </nav>
+      <details class="lang-menu">
+        <summary aria-label="Sprache: Deutsch"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>DE</span></summary>
+        <ul>
+            <li><a href="/" hreflang="en" lang="en">English</a></li>
+            <li><a href="/de/" hreflang="de" lang="de" aria-current="true">Deutsch</a></li>
+            <li><a href="/ro/" hreflang="ro" lang="ro">Română</a></li>
+            <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+        </ul>
+      </details>
     </div>
   </header>
 
@@ -35,13 +44,12 @@
     <section class="hero">
       <div class="wrap">
         <img src="/assets/icon-512.png" alt="App-Symbol von OurCents" width="96" height="96" class="hero-icon">
-        <h1>Privat. Sicher. <span>Gemeinsam.</span></h1>
+        <h1>Ausgaben gemeinsam erfassen – <span>privat.</span></h1>
         <p class="lead">
           Die einfache, durchdachte Ausgaben-App für Paare. Erfasse Ausgaben in Sekunden – getippt oder gesprochen – und behalte sie gemeinsam mit deinem Partner im Blick, ohne Anmeldung und ohne deine Finanzen auf einem OurCents-Server
           zu speichern.
         </p>
         <p class="lead-note">Nur für dich? Ohne Partner funktioniert es genauso gut.</p>
-        <p class="langs"><a href="/" hreflang="en" lang="en">English</a> · <strong>Deutsch</strong> · <a href="/ro/" hreflang="ro" lang="ro">Română</a> · <a href="/es/" hreflang="es" lang="es">Español</a></p>
         <div class="pills">
           <span class="pill">Ohne Konto</span>
           <span class="pill">Ohne Werbung</span>
@@ -77,8 +85,8 @@
               sendest, laufen über diesen Dienst und unterliegen dessen eigener Datenschutzerklärung. Der Abgleich im WLAN läuft direkt zwischen euren Handys.</p>
           </div>
           <figure class="shot-item hero-shot">
-            <div class="shot"><img src="/assets/screenshots/7-synced.jpg" alt="Ergebnis des Abgleichs: Mit Emma abgeglichen, 3 neue Buchungen, ihr habt jetzt beide dieselben Daten" width="430" height="932"></div>
-            <figcaption>Mit deinem Partner abgeglichen</figcaption>
+            <div class="shot"><img src="/assets/screenshots/16-paired.jpg" alt="Partner-Abgleich: mit Emma gekoppelt, Mit Emma abgleichen, und deine Daten gehen direkt von deinem Handy zu dem deines Partners, verschlüsselt" width="430" height="932"></div>
+            <figcaption>Mit deinem Partner gekoppelt</figcaption>
           </figure>
         </div>
       </div>
@@ -121,24 +129,32 @@
           <button type="button" class="gallery-btn gallery-prev" aria-label="Vorherige Bildschirmfotos">‹</button>
           <div class="shots" tabindex="0">
             <figure class="shot-item">
-              <div class="shot"><img src="/assets/screenshots/1-overview.jpg" alt="OurCents-Übersicht: Monatssaldo, Karte für den Partner-Abgleich und Ausgaben nach Kategorie" loading="lazy" width="430" height="932"></div>
-              <figcaption>Einfach, gemeinsam, privat</figcaption>
+              <div class="shot"><img src="/assets/screenshots/1-overview.jpg" alt="OurCents-Übersicht: Saldo des Monats, mit dem Partner abgeglichen, Einnahmen und Ausgaben, Ausgaben nach Kategorie" loading="lazy" width="430" height="932"></div>
+              <figcaption>Ausgaben gemeinsam erfassen</figcaption>
             </figure>
             <figure class="shot-item">
-              <div class="shot"><img src="/assets/screenshots/2-together.jpg" alt="Suche nach „supermarket“: Ergebnisse von beiden Handys, mit Hinweisen, was dein Partner eingetragen hat" loading="lazy" width="430" height="932"></div>
-              <figcaption>In Sekunden gefunden</figcaption>
+              <div class="shot"><img src="/assets/screenshots/14-overview-insight.jpg" alt="Hinweis in der Übersicht: Lebensmittel auf dem Weg zu etwa 567 € bis 30. November, 67 € über dem Budget" loading="lazy" width="430" height="932"></div>
+              <figcaption>Mehrausgaben früh erkennen</figcaption>
             </figure>
             <figure class="shot-item">
-              <div class="shot"><img src="/assets/screenshots/3-add.jpg" alt="Ausgabe per Sprache erfassen: „45.50 groceries supermarket“" loading="lazy" width="430" height="932"></div>
+              <div class="shot"><img src="/assets/screenshots/13-category.jpg" alt="Lebensmittel Monat für Monat: die Summe, die letzten 6 Monate und der Durchschnitt" loading="lazy" width="430" height="932"></div>
+              <figcaption>Jede Kategorie Monat für Monat</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/5-budgets.jpg" alt="Monatsbudgets je Kategorie mit Fortschrittsbalken und der Prognose für Lebensmittel" loading="lazy" width="430" height="932"></div>
+              <figcaption>Im Budget bleiben</figcaption>
+            </figure>
+            <figure class="shot-item">
+              <div class="shot"><img src="/assets/screenshots/3-add.jpg" alt="Eine Ausgabe per Sprache erfassen: „45,50 Lebensmittel Supermarkt“" loading="lazy" width="430" height="932"></div>
               <figcaption>Eintippen. Sagen. Fertig.</figcaption>
             </figure>
             <figure class="shot-item">
-              <div class="shot"><img src="/assets/screenshots/4-who-spent.jpg" alt="Statistik: Ausgaben pro Kategorie, pro Person und über die letzten 6 Monate" loading="lazy" width="430" height="932"></div>
-              <figcaption>Klare Statistik</figcaption>
+              <div class="shot"><img src="/assets/screenshots/4-who-spent.jpg" alt="Statistik: wer was ausgegeben hat, Ausgaben nach Konto und die letzten 6 Monate" loading="lazy" width="430" height="932"></div>
+              <figcaption>Wer was ausgegeben hat</figcaption>
             </figure>
             <figure class="shot-item">
-              <div class="shot"><img src="/assets/screenshots/5-budgets.jpg" alt="Monatliche Budgets pro Kategorie mit Fortschrittsbalken" loading="lazy" width="430" height="932"></div>
-              <figcaption>Im Budget bleiben</figcaption>
+              <div class="shot"><img src="/assets/screenshots/12-budgets-year-down.jpg" alt="Budgets fürs ganze Jahr: die Monate gegen die Monatsbudgets und Jahresbudgets für Urlaub, Geschenke und Versicherungen" loading="lazy" width="430" height="932"></div>
+              <figcaption>Jahresbudgets (Pro)</figcaption>
             </figure>
             <figure class="shot-item">
               <div class="shot"><img src="/assets/screenshots/6-private.jpg" alt="Buchungen im dunklen Modus" loading="lazy" width="430" height="932"></div>
@@ -223,5 +239,6 @@
     </div>
   </footer>
   <script src="/assets/gallery.js" defer></script>
+  <script src="/assets/menu.js" defer></script>
 </body>
 </html>
