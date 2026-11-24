@@ -237,3 +237,4 @@ dialog.lightbox img { max-width: 92vw; max-height: 92vh; width: auto; height: au
 .lb-next { right: 16px; top: 50%; transform: translateY(-50%); }
 .lb-btn:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
 @media (max-width: 560px) { .lb-prev, .lb-next { top: auto; bottom: 20px; transform: none; } }
+.note.offer { font-weight: 600; }
